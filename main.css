@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* font-family: 'Roboto', san-serif; */
+
+
+/* including a font in the body makes it the default for the page */
+body {
+        font-family: 'Roboto', san-serif;
+        background: url("wave.png") repeat-x left 230px,
+        linear-gradient(to bottom right, red, yellow);
+
+}
+
+#counter {
+    border: 1px solid pink;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#canvas {
+    border: 1px solid blue;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    height: 10000px;
+
+}
