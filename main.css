@@ -1,14 +1,81 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Open+Sans');
 /* font-family: 'Roboto', san-serif; */
 
 
 /* including a font in the body makes it the default for the page */
 body {
-        font-family: 'Roboto', san-serif;
-        background: url("wave.png") repeat-x left 230px,
-        linear-gradient(to bottom right, red, yellow);
+        font-family: 'Open Sans', san-serif;
+
+        background-color: #94E0F2; /* sky blue */
+
 
 }
+
+#title {
+  font-family: 'Krona One' sans-serif;
+  font-size: 2em;
+  text-align: center;
+  z-index: 1;
+}
+
+#canvas {
+    border: 1px solid blue;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+    height: 10000px;
+}
+
+#tree {
+  border: 1px solid red;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 1000px;
+  height: 500px;
+  top: -120px;
+  z-index: 5;
+}
+
+.trunk {
+  position: absolute;
+  top: 175px;
+  left: 449px;
+  margin: -1px;
+  bottom: -5px;
+  width: 182px;
+  height: 10000px;
+  border: 1px solid red;
+  background: url(img/trunk.svg);
+}
+
+.rightgrass {
+
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  background: url(img/rightgrass.svg) repeat-y 200px;
+  border: 1px solid yellow;
+}
+/*
+.middle {
+  position: absolute;
+  display: block;
+  width: 10%;
+  top: 500px;
+  background: url("img/middle.svg") repeat-y left 230px;
+}*/
+
+
+#subtext {
+  font-family: 'Open Sans' sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  top: auto;
+}
+
 
 #counter {
     border: 1px solid pink;
@@ -21,13 +88,4 @@ body {
     height: 100px;
     line-height: 100px;
     text-align: center;
-}
-#canvas {
-    border: 1px solid blue;
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    width: 800px;
-    height: 10000px;
-
 }

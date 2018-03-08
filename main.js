@@ -4,7 +4,7 @@
 var counter = document.getElementById('counter');
 var fromTop = window.pageYOffset;
 
-counter.innerHTML = "counter text";
+counter.innerHTML = "Monkey";
 
 //Pseudocode when the user is scrolling update the variable fromTop and make decisions to change stuff on the page
 //window.onscroll is a boolean (yes/no)
@@ -20,10 +20,15 @@ window.onscroll = function () {
     if(fromTop > 1000){
       counter.innerHTML = "More than 1000";
       counter.style.backgroundColor="red";
+      counter.style.backgroundImage="url()";
+    }
+    if(fromTop > 2000){
+      counter.innerHTML = "More than 5000";
+      counter.style.backgroundColor="red";
       counter.style.backgroundImage="url(yellowsubmarine.png)";
     }
     else {
-      counter.innerHTML = "counter text";
+      counter.innerHTML = "Monkey";
       counter.style.backgroundColor="green";
     }
 
