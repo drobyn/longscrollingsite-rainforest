@@ -1,10 +1,10 @@
 //document.getElementById('counter').innerHTML = "hello";
 
 //initalize variables - set-up variables
-var counter = document.getElementById('counter');
+var counter = document.getElementById('info');
 var fromTop = window.pageYOffset;
 
-counter.innerHTML = "Monkey";
+counter.innerHTML = "Layer";
 
 //Pseudocode when the user is scrolling update the variable fromTop and make decisions to change stuff on the page
 //window.onscroll is a boolean (yes/no)
@@ -15,21 +15,20 @@ window.onscroll = function () {
     //test if it works
     console.log(fromTop);
 
-    counter.style.top = 100 + fromTop + "px";
+    counter.style.top = 150 + fromTop + "px";
 
-    if(fromTop > 1000){
-      counter.innerHTML = "More than 1000";
-      counter.style.backgroundColor="red";
-      counter.style.backgroundImage="url()";
+    if(fromTop > 21000){
+      counter.innerHTML = "Upper Canopy Layer";
+      //counter.style.backgroundColor="red";
+      //counter.style.backgroundImage="url()";
     }
     if(fromTop > 2000){
-      counter.innerHTML = "More than 5000";
-      counter.style.backgroundColor="red";
-      counter.style.backgroundImage="url(yellowsubmarine.png)";
+      //counter.innerHTML = "More than 5000";
+      //counter.style.backgroundColor="red";
     }
     else {
-      counter.innerHTML = "Monkey";
-      counter.style.backgroundColor="green";
+      counter.innerHTML = "Emergent Layer";
+      //counter.style.backgroundColor="green";
     }
 
 }
