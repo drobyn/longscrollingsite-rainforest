@@ -32,75 +32,217 @@ body {
   color: white;
 }
 
-
-
 #type {
   margin: auto;
   padding: 0px 20px 0px 20px;
   border-style: dotted;
   border-width: 3px;
-  border-color: #72AA5E;
+  border-color: #5C8E4C;
+  background-color: #5C8E4C;
   position: fixed;
   top: 25px;
   left: 330px;
   text-align: center;
-  z-index: 6;
+  z-index: 11;
 }
 
 #info {
-    border: 1px solid pink;
     border-style: dotted;
     border-width: 3px;
-    border-color: #72AA5E;
+    border-color: #5C8E4C;
+    background-color: #5C8E4C;
     position: absolute;
     bottom: 25px;
     left: 302px;
     margin: 0;
     padding: 10px;
     width: 550px;
-    height: 300px;
-    line-height: 100px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
-    z-index: 10;
+    z-index: 11;
+}
+
+.intro {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 330px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 600px;
+  left: 333px;
+
+}
+
+.deforestation {
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 340px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 2000px;
+  left: 333px;
+}
+
+.water {
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 250px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 4000px;
+  left: 333px;
+}
+
+.plants {
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 315px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 4000px;
+  left: 333px;
+
+}
+
+.cancer {
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 220px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 6000px;
+  left: 333px;
+
+}
+
+
+.cultivation {
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 220px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 7800px;
+  left: 333px;
+
+}
+
+.bottom {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 410px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 8800px;
+  left: 333px;
+
+}
+
+.conclusion {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #72AA5E;
+  position: absolute;
+  width: 550px;
+  height: 200px;
+  z-index: 7;
+  color: white;
+  line-height: 25px;
+  padding: 10px;
+  background-color: #72AA5E;
+
+  top: 9500px;
+  left: 333px;
+
 }
 
 
 #canvas {
-    border: 1px solid blue;
     position: relative;
     margin: 0 auto;
     padding: 0;
     width: 1200px;
     height: 10000px;
-    background-color: #0296AF; /* Sky blue! */
+    background-color: #25C7D8; /* Sky blue! */
     z-index: -1;
 
 }
 
+#canoe {
+  position: absolute;
+  z-index: 20;
+  width: auto;
+  height: auto;
+  top: 300px;
+  background-image: url(img/natgeo/canoe.jpg);
+}
+
 .treetops1 {
-  border: 1px solid pink;
   position: absolute;
   width: 1200px;
   height:250px;
-  top: 200px;
+  top: 155px;
   background-image: url(img/trees.svg);
   background-repeat: round;
-  z-index: 5;
+  z-index: 1;
 }
 
-.treetops2 {
-  border: 1px solid pink;
-  position: absolute;
-  width: 1100px;
-  height:250px;
-  top: 350px;
-  left: 100px;
-  background-image: url(img/trees.svg);
-  background-repeat: round;
-  z-index: 5;
-}
-
-.trunks {
+/*.trunks {
   border: 1px solid pink;
   position: absolute;
   width: 1200px;
@@ -109,7 +251,7 @@ body {
   background-image: url(img/trunks.svg);
   background-repeat: repeat-y;
   z-index: 5;
-}
+}*/
 
 .trunks2 {
   position: absolute;

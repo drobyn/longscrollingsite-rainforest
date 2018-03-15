@@ -16,17 +16,26 @@ window.onscroll = function () {
     console.log(fromTop);
 
     counter.style.top = 150 + fromTop + "px";
+    counter.style.color = "white";
 
-    if(fromTop > 21000){
+
+    if(fromTop > 400){
       counter.innerHTML = "Upper Canopy Layer";
       //counter.style.backgroundColor="red";
       //counter.style.backgroundImage="url()";
     }
-    if(fromTop > 2000){
+    if(fromTop > 1000){
+      counter.innerHTML = "Understory Layer";
       //counter.innerHTML = "More than 5000";
       //counter.style.backgroundColor="red";
     }
-    else {
+
+    if(fromTop > 9100){
+      counter.innerHTML = "Forest Floor Layer";
+      //counter.innerHTML = "More than 5000";
+      //counter.style.backgroundColor="red";
+    }
+    if (fromTop < 200) {
       counter.innerHTML = "Emergent Layer";
       //counter.style.backgroundColor="green";
     }
